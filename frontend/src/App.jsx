@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import {
   RouterProvider,
@@ -10,7 +9,7 @@ import RootLayout from "./components/RootLayout/RootLayout";
 import Home from "./components/Home/Home";
 import Nutrients from "./components/NutrientPlan/Nutrients";
 import Consulting from "./components/Consulting/Consulting";
-import Shop from '../src/components/Shop/Shop'
+import Shop from "../src/components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 
 const router = createBrowserRouter(
@@ -20,7 +19,7 @@ const router = createBrowserRouter(
       <Route path="shop" element={<Shop />} />
       <Route path="nutrient" element={<Nutrients />} />
       <Route path="consult" element={<Consulting />} />
-      <Route path='cart' element={<Cart />} />
+      <Route path="cart" element={<Cart />} />
     </Route>
   )
 );
