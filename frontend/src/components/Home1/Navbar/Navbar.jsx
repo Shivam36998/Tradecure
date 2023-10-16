@@ -1,7 +1,7 @@
 import React from "react";
-import image from "../assets/logo-1.jpg";
+import image from "../../assets/logo-1.jpg";
 import styles from "./Navbar.module.css";
-import Button from "../UI/Button";
+import Button from "../../UI/Button";
 import { NavLink } from "react-router-dom";
 // import {useState} from "react";
 
@@ -26,7 +26,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i className="fa-solid fa-cart-shopping"></i>
           </NavLink>
         </li>
         <li>

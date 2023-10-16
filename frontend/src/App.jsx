@@ -5,11 +5,11 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
-import RootLayout from "./components/RootLayout/RootLayout";
-import Home from "./components/Home/Home";
-import Nutrients from "./components/NutrientPlan/Nutrients";
-import Consulting from "./components/Consulting/Consulting";
-import Shop from "../src/components/Shop/Shop";
+import RootLayout from "../src/components/RootLayout/RootLayout";
+import Home from "./components/Home1/Home/Home";
+import Nutrients from "./components/Home1/NutrientPlan/Nutrients";
+import Consulting from "./components/Home1/Consulting/Consulting";
+import Shop from "./components/Home1/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 
 const router = createBrowserRouter(
