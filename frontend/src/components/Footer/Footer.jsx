@@ -1,9 +1,29 @@
-import React from 'react'
+import React from "react";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <h1 className='text-bold text-3xl p-4 bg-gray-700 text-center'>Welcome to Footer Page</h1>
-  )
-}
+    <>
+      <div className={styles.container}>
+        <div className={styles.title}>
+          <h3>TradCure</h3>
+        </div>
+        <div className={styles.info}>
+          <ul>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Footer
+export default Footer;
