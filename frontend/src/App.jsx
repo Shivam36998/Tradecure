@@ -11,6 +11,12 @@ import Nutrients from "./components/Home1/NutrientPlan/Nutrients";
 import Consulting from "./components/Home1/Consulting/Consulting";
 import Shop from "./components/Home1/Shop/Shop";
 import Cart from "./components/Cart/Cart";
+import { loadHomePage } from "./handleAPIs";
+import { useEffect, useState } from "react";
+
+
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +31,13 @@ const router = createBrowserRouter(
 );
 
 function App() {
+
+  let [homeData, setHomeData] = useState();
+  useEffect(()=>{
+    loadHomePage(setHomeData);
+    console.log(homeData);
+  }, [])
+
   return (
     <>
       <RouterProvider router={router} />
