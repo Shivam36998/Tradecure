@@ -1,0 +1,4 @@
+make your own components , everything should be in components,
+tum jo file banao usko alag se component banake daalo, aur main app file me integrate karte time bhi comment me likh daalo
+make sure tailwind css, ya module.css files hi use karo
+aur class aur id ka naam sahi se daalo
