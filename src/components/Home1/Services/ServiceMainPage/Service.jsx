@@ -12,29 +12,17 @@ export default function Service() {
         <div className={styles.mainBtns}>
           <Fade left>
             <div className={styles.leftBtns}>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
             </div>
           </Fade>
 
           <Fade right>
             <div className={styles.rightBtns}>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
-              <button className={styles.btns}>
-                Lorem ipsum dolor sit, amet.
-              </button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
+              <button className={styles.btns}>Lorem ipsum dolor sit...</button>
             </div>
           </Fade>
         </div>

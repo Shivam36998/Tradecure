@@ -5,7 +5,6 @@
   justify-self: center;
   text-align: center;
   width: 100%;
-  height: 650px;
 }
 
 .container .heading {
@@ -17,13 +16,12 @@
 }
 
 .container .heading h3 {
-  width: 50%;
+  width: 100%;
   font-size: 2rem;
   font-weight: 400;
   background: rgb(131, 128, 128);
   text-align: center;
   padding: 10px;
-  border-radius: 20px;
 }
 
 .container .mainBtns {
@@ -32,22 +30,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .container .mainBtns .leftBtns {
-  border: 2px solid #0c57a2;
   display: flex;
   flex-direction: column;
   width: 40%;
+  text-align: center;
   align-items: center;
   justify-content: center;
   padding: 2%;
 }
 
 .container .mainBtns .rightBtns {
-  border: 2px solid #0c57a2;
   display: flex;
   flex-direction: column;
+  text-align: center;
   width: 40%;
   margin-left: 2%;
   align-items: center;
@@ -57,12 +56,13 @@
 
 .btns {
   background: #0c57a2;
-  padding: 7%;
+  text-align: center;
   position: relative;
   z-index: 4;
   width: 100%;
-  height: 20px;
+  height: 50px;
   margin-top: 5%;
+  color: white;
   transition: 1s;
   animation: ease-in-out;
 }
@@ -73,22 +73,28 @@
 }
 
 @media (max-width: 800px) {
+  .container {
+    margin-bottom: 10%;
+  }
   .container .mainBtns {
     flex-direction: column;
   }
 
   .container .heading {
-    width: 80%;
+    width: 100%;
   }
 
+  .container .heading h3 {
+    width: 100%;
+  }
   .container .mainBtns .leftBtns {
-    width: 60%;
+    width: 80%;
     border: 0;
     margin-top: 2%;
   }
 
   .container .mainBtns .rightBtns {
-    width: 60%;
+    width: 80%;
     border: 0;
     margin-left: 0;
     margin-top: 2%;

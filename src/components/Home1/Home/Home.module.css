@@ -76,3 +76,30 @@ body {
 .container .subContainer2 button:hover {
   cursor: pointer;
 }
+
+@media (max-width: 640px) {
+  .container {
+    padding-top: 10%;
+    flex-direction: column;
+  }
+
+  .container .subContainer1 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container .subContainer2 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container .subContainer2 .headingText h1 {
+    padding: 2%;
+  }
+
+  .container .subContainer2 .text p {
+    padding: 4%;
+  }
+}

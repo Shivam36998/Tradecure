@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./Testimonials.module.css";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
@@ -9,8 +10,12 @@ const Testimonials = () => {
       <div className={styles.mainContainer}>
         <div className={styles.container}>
           <div className={styles.upperRow}>
-            <h1>Testimonials</h1>
-            <button>See All</button>
+            <div className={styles.heading}>
+              <h1>Testimonials</h1>
+            </div>
+            <div className={styles.btn}>
+              <button>See All</button>
+            </div>
           </div>
           <div className={styles.midRow}>
             <IoIosArrowBack size={100} color="blue" className={styles.icon} />
@@ -21,7 +26,7 @@ const Testimonials = () => {
               />
               <div className={styles.main}>
                 <h2>Hinata Hyuga</h2>
-                <p>Byakugon Princess</p>
+                <p>Byakugon Princess Ice-cream</p>
                 <span>
                   This site is a fitness haven! It offers a diverse range of
                   high-quality fitness products and connects you with
@@ -39,9 +44,11 @@ const Testimonials = () => {
               className={styles.icon}
             />
           </div>
-          <button className={styles.ownTestimonial}>
-            Leave Your Own Testimonial
-          </button>
+          <div className={styles.ownTest}>
+            <button className={styles.ownTestimonial}>
+              Leave Your Own Testimonial
+            </button>
+          </div>
         </div>
       </div>
     </>

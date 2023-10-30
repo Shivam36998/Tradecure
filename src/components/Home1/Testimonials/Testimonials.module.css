@@ -1,4 +1,5 @@
 .mainContainer {
+  margin-top: 2%;
   display: flex;
   width: 100%;
   max-width: 100%;
@@ -7,7 +8,6 @@
 }
 
 .container {
-  padding: 10vh 10vw;
   display: flex;
   flex-direction: column;
   /* align-items: center; */
@@ -16,20 +16,60 @@
   max-width: 100%;
 }
 .upperRow {
+  width: 100%;
   display: flex;
-  padding-left: 18vw;
-  margin-left: 10vw;
+  flex-direction: column;
+  justify-content: center;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
   border-bottom: 1px solid #0c57a2;
 }
-.upperRow h1 {
-  font-size: 2.5rem;
+
+.upperRow .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.upperRow .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.upperRow .heading h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+  background: rgb(131, 128, 128);
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.upperRow .btn {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
 .upperRow button {
+  width: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
   font-size: 1.3rem;
   padding: 5px 15px;
+  border-radius: 40px;
   border: 1px solid #0c57a2;
   color: #0c57a2;
   background-color: #fff;
@@ -41,6 +81,7 @@
   color: #fff;
 }
 .midRow {
+  padding: 10vh 10vw;
   display: flex;
   align-items: center;
   width: 80%;
@@ -92,7 +133,16 @@
   width: 13vw;
   border-radius: 50%;
 }
+.ownTest {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
 .ownTestimonial {
+  display: flex;
+  text-align: center;
+  width: 40%;
   font-size: 1.4rem;
   border: 1px solid #0c57a2;
   background-color: #fff;
@@ -108,13 +158,20 @@
 }
 
 @media screen and (max-width: 450px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .upperRow {
+    width: 100%;
     margin-left: 0;
     padding-left: 0;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
   }
+
   .midRow {
     width: 100%;
     margin: 0;
@@ -123,7 +180,34 @@
     flex-direction: column;
   }
   .testimonialArea img {
-    width: 90px;
-    height: 90px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .upperRow .heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .upperRow .btn {
+    width: 100%;
+  }
+
+  .upperRow .heading h1 {
+    width: 100%;
+  }
+
+  .upperRow .btn {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  .main {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 }

@@ -9,17 +9,22 @@ const Footer = () => {
           <h3>TradCure</h3>
         </div>
         <div className={styles.info}>
-          <ul>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">LinkedIn</a>
-            </li>
-          </ul>
+          <div className={styles.infohead}>
+            <h3>Connect with us</h3>
+          </div>
+          <div className={styles.links}>
+            <ul>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

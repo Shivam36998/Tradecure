@@ -7,39 +7,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 0;
   width: 100vw;
   max-width: 100%;
 }
 .heading {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.heading h1 {
+  width: 100%;
   font-size: 2rem;
-  color: #0c57a2;
+  font-weight: 400;
+  background: rgb(131, 128, 128);
+  text-align: center;
+  padding: 10px;
 }
 .searchBox {
+  margin-top: 2%;
   display: flex;
-  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 .searchButton {
   background-color: #0c57a2;
   font-size: 1.5rem;
   margin-top: 20px;
   padding: 10px 20px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
 .search {
-  width: 70vw;
+  width: 50vw;
   padding: 10px 20px;
   background-color: #fff;
   font-size: 1.5rem;
   margin-top: 20px;
   outline: 0;
-  border: none;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
+
 .row {
   display: flex;
   gap: 10px;
-  width: 80%;
+  width: 85%;
   margin: 10px 10vw;
   overflow: auto;
+  margin-top: 2%;
 }
 .shell {
   padding: 10px 0;
@@ -211,7 +231,7 @@ a.buy-btn:focus {
   color: #fff;
 }
 .red {
-  color: #f44336;
+  color: #0c57a2;
   font-size: 22px;
   display: inline-block;
   margin: 0 5px;
@@ -235,8 +255,24 @@ a.buy-btn:focus {
     margin-top: 0px;
   }
   a.buy-btn {
-    border-color: #ff9800;
-    background: #ff9800;
+    border-color: #0c57a2;
+    background: #0c57a2;
     color: #fff;
+  }
+}
+
+@media (max-width: 640px) {
+  .heading h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .search {
+    width: 60vw;
+    padding: 5px 20px;
+  }
+
+  .searchButton {
+    padding: 5px 20px;
   }
 }

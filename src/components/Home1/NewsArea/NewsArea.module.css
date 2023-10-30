@@ -3,21 +3,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   gap: 20px;
 }
 .upperRow {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 80vw;
+  width: 100%;
 }
+
+.newsArea .upperRow .heading {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.newsArea .upperRow .heading h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 400;
+  background: rgb(131, 128, 128);
+  text-align: center;
+  padding: 10px;
+}
+
+.newsArea .upperRow .btn {
+  width: 100%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .upperRow button {
+  width: 30%;
   background-color: #0c57a2;
-  padding: 0 20px;
+  padding: 10px 20px;
   border: none;
   font-size: 1.5rem;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 40px;
   cursor: pointer;
 }
 .lowerRow {
@@ -33,13 +62,10 @@
   display: inline-block;
   min-width: 280px;
   max-width: 100%;
-  height: 570px;
-  border-radius: 5px;
-  padding: 2px;
+  height: 590px;
   background-color: #fff;
 }
 .cardArea {
-  border-radius: 3px;
   background-image: url("https://images.indianexpress.com/2023/10/noni-juice.jpg?w=640");
   display: flex;
   flex-direction: column;
@@ -99,7 +125,8 @@
   padding: 5px 15px;
   border-radius: 5px;
   margin-right: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 2%;
   cursor: pointer;
   transition: 0.7s ease-in-out;
 }
@@ -112,5 +139,26 @@
 @media screen and (max-width: 840px) {
   .lowerRow {
     padding: 20px 5vw;
+  }
+
+  .upperRow {
+    flex-direction: column;
+  }
+
+  .upperRow button {
+    width: 50%;
+  }
+
+  .newsArea .upperRow .heading {
+    width: 100%;
+  }
+
+  .newsArea .upperRow .heading h1 {
+    width: 100%;
+  }
+
+  .newsArea .upperRow .btn {
+    width: 100%;
+    margin-top: 10%;
   }
 }

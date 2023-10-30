@@ -6,13 +6,11 @@ import styles from "./MarketArea.module.css";
 const MarketArea = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.heading}>Explore our Market Area</h1>
+      <div className={styles.heading}>
+        <h1>Explore our Market Area</h1>
+      </div>
       <div className={styles.searchBox}>
-        <input
-          type="text"
-          className={styles.search}
-          placeholder="Search"
-        />
+        <input type="text" className={styles.search} placeholder="Search" />
         <div className={styles.searchButton}>Search</div>
       </div>
 
@@ -42,12 +40,10 @@ const MarketArea = () => {
                 </div>
                 <div className={styles["card-footer"]}>
                   <div className={styles["wcf-left"]}>
-                    <span className={styles["price"]}>Rp500.000</span>
+                    <span className={styles["price"]}>₹ 500.000</span>
                   </div>
                   <div className={styles["wcf-right"]}>
-                    <a
-                      href="#"
-                      className={styles["buy-btn"]}>
+                    <a href="#" className={styles["buy-btn"]}>
                       Buy
                     </a>
                   </div>
@@ -81,12 +77,10 @@ const MarketArea = () => {
                 </div>
                 <div className={styles["card-footer"]}>
                   <div className={styles["wcf-left"]}>
-                    <span className={styles["price"]}>Rp500.000</span>
+                    <span className={styles["price"]}>₹ 500.000</span>
                   </div>
                   <div className={styles["wcf-right"]}>
-                    <a
-                      href="#"
-                      className={styles["buy-btn"]}>
+                    <a href="#" className={styles["buy-btn"]}>
                       Buy
                     </a>
                   </div>
@@ -120,12 +114,10 @@ const MarketArea = () => {
                 </div>
                 <div className={styles["card-footer"]}>
                   <div className={styles["wcf-left"]}>
-                    <span className={styles["price"]}>Rp500.000</span>
+                    <span className={styles["price"]}>₹ 500.000</span>
                   </div>
                   <div className={styles["wcf-right"]}>
-                    <a
-                      href="#"
-                      className={styles["buy-btn"]}>
+                    <a href="#" className={styles["buy-btn"]}>
                       Buy
                     </a>
                   </div>
@@ -159,12 +151,10 @@ const MarketArea = () => {
                 </div>
                 <div className={styles["card-footer"]}>
                   <div className={styles["wcf-left"]}>
-                    <span className={styles["price"]}>Rp500.000</span>
+                    <span className={styles["price"]}>₹ 500.000</span>
                   </div>
                   <div className={styles["wcf-right"]}>
-                    <a
-                      href="#"
-                      className={styles["buy-btn"]}>
+                    <a href="#" className={styles["buy-btn"]}>
                       Buy
                     </a>
                   </div>

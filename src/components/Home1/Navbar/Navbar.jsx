@@ -1,4 +1,4 @@
-import logo from "../../assets/logo-1.jpg";
+import logo from "../../assets/Tradcure.png";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="m-auto ml-5">
               <Link to="/">
                 <img
-                  style={{ width: "10rem" }}
+                  style={{ width: "15rem" }}
                   className={`max-w-xs ${
                     isActive("/") ? "text-blue-500" : "text-black"
                   }`}
@@ -98,7 +98,7 @@ export default function Navbar() {
               </li>
 
               <li className="md:mt-2 md:px-5">
-                <button className="mt-1 font-bold border-2 border-black py-1 px-3 rounded-2xl">
+                <button className="mt-0 font-bold border-2 border-black py-1 px-3 rounded-2xl">
                   Sign In
                 </button>
               </li>
