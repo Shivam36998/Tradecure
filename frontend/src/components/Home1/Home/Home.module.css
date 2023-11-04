@@ -1,0 +1,105 @@
+body {
+  overflow-x: hidden;
+  background: #ddd;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 700px;
+}
+
+.container .subContainer1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .subContainer1 img {
+  width: 100%;
+}
+
+.container .subContainer2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .subContainer2 .headingText {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.container .subContainer2 .headingText h1 {
+  font-size: 3rem;
+}
+
+.container .subContainer2 .text {
+  width: 100%;
+  display: flex;
+  text-align: center;
+}
+
+.container .subContainer2 .text p {
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+
+.container .subContainer2 .btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.container .subContainer2 button {
+  display: block;
+  text-align: center;
+  border-radius: 40px;
+  background: #0c57a2;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2%;
+  width: 50%;
+  border: none;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container .subContainer2 button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-top: 10%;
+    flex-direction: column;
+  }
+
+  .container .subContainer1 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container .subContainer2 {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container .subContainer2 .headingText h1 {
+    padding: 2%;
+  }
+
+  .container .subContainer2 .text p {
+    padding: 4%;
+  }
+}
