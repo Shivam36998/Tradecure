@@ -1,0 +1,15 @@
+@import '../Vars.css';
+
+.btn{
+   background-color: var(--clr-background);
+   border:none;
+   outline:none;
+   padding:10px 22px;
+   color:var(--clr-general);
+   font-family: var(--text-font);
+   font-size:18px;
+   letter-spacing: .08rem;
+   text-transform: uppercase;
+   border-radius: 60px;
+   cursor:pointer;
+}
